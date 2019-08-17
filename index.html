@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Drag N Rock</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <h1>Drag N Rock</h1>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8 col-6">
+                <div class="dropIn border" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+            <div class="col-md-4 col-6 position-relative border themenu">
+                <div class="dragFrom">
+                    <span class="menu">menu</span>
+                    <label id="Label" draggable="true" ondragstart="drag(event)" disabled>Label</label>
+                    <input id="TextField" type="text" placeholder="TextField" draggable="true" ondragstart="drag(event)"
+                        disabled>
+                    <input id="Slider" type="range"  min="10" value="10" max="2000" step="100" draggable="true"
+                        ondragstart="drag(event)" disabled>
+                    <div id="trash" class="trash" ondrop="trash(event)" ondragover="allowDrop(event)"><i
+                            class="fa fa-trash-o fa-3x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/7c5c153afc.js"></script>
+    <!-- Custom JS -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

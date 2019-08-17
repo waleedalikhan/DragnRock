@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  min-height: 70vh;
+  color: lightgray;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.dropIn {
+  padding: 20px;
+  height: 80vh;
+}
+.themenu {
+  height: 80vh;
+  position: relative;
+  .dragFrom {
+    position: relative;
+    margin: 0 20px 0 20px;
+    .menu {
+      padding: 10px;
+      margin-bottom: 20px;
+      display: block;
+      background: #000;
+      color: #fff;
+      border-radius: 0 0 10px 10px;
+    }
+    .trash {
+      position: absolute;
+      top: 720px;
+      bottom: 0;
+      text-align: center;
+      min-height: 100px;
+      width: 100%;
+      color: red;
+      transition: all ease-in-out .4s;
+      &:hover{
+        transform: scale(1.05);
+        color: rgb(240, 57, 57);
+      }
+    }
+  }
+}
+
+input[type="text"] {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0 10px 0;
+  box-sizing: border-box;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin: 10px 0 10px 0;
+  padding: 8px 0 8px 0;
+}
+
+fieldset {
+  border: 1px solid lightgray;
+  margin-top: 20px;
+  padding: 20px;
+  width: 50%;
+}
+
+legend {
+  padding: 0.2em 0.5em;
+  color: lightgray;
+  font-size: 90%;
+  width: auto;
+  border-bottom: none;
+}
