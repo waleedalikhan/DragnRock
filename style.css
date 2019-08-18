@@ -20,6 +20,7 @@
 .themenu .dragFrom {
   position: relative;
   margin: 0 20px 0 20px;
+  height: 80vh;
 }
 
 .themenu .dragFrom .menu {
@@ -54,8 +55,6 @@ input[type="text"] {
   width: 100%;
   padding: 12px 20px;
   margin: 10px 0 10px 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 input[type="range"] {
@@ -73,6 +72,9 @@ fieldset {
   margin-top: 20px;
   padding: 20px;
   width: 50%;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 3px 0 #ccc;
+          box-shadow: 0px 0px 3px 0 #ccc;
 }
 
 legend {
@@ -81,5 +83,6 @@ legend {
   font-size: 90%;
   width: auto;
   border-bottom: none;
+  background: #fff;
 }
 /*# sourceMappingURL=style.css.map */

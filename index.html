@@ -13,14 +13,14 @@
 
 <body>
 
-    <h1>Drag N Rock</h1>
-
+    <h1 class="text-right h4 font-weight-lighter text-muted">Drag N Rock</h1>
+    
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-8 col-6">
-                <div class="dropIn border" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="dropIn" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
             </div>
-            <div class="col-md-4 col-6 position-relative border themenu">
+            <div class="col-md-4 col-6 position-relative border-left border-top themenu shadow-sm">
                 <div class="dragFrom">
                     <span class="menu">menu</span>
                     <label id="Label" draggable="true" ondragstart="drag(event)" disabled>Label</label>

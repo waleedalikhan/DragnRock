@@ -31,19 +31,19 @@ function drop(ev) {
 }
 
 function getLabel(target) {
-    var label = prompt("Please Enter Label");
+    // var label = prompt("Please Enter Label");
     var element = document.createElement("label");
     element.setAttribute('id', Math.random());
-    element.innerHTML = label;
+    element.innerHTML = 'Label';
     element.setAttribute('draggable', 'true');
     element.setAttribute('ondragstart', 'drag(event);');
     target.appendChild(element);
 }
 function getTextField(target) {
-    var label = prompt("Please Enter Label");
+    // var label = prompt("Please Enter Label");
     var fieldset = document.createElement('FIELDSET')
     fieldset.setAttribute('id', Math.random());
-    fieldset.innerHTML = '<legend> ' + label + ' </legend>'
+    fieldset.innerHTML = '<legend>Name</legend>'
     fieldset.setAttribute('draggable', 'true');
     fieldset.setAttribute('ondragstart', 'drag(event);');
 
@@ -57,10 +57,10 @@ function getTextField(target) {
 }
 
 function getSlider(target) {
-    var label = prompt("Please Enter Label");
+    // var label = prompt("Please Enter Label");
     var fieldset = document.createElement('FIELDSET')
     fieldset.setAttribute('id', Math.random());
-    fieldset.innerHTML = '<legend> ' + label + ' </legend>'
+    fieldset.innerHTML = '<legend>Slider</legend>'
     fieldset.setAttribute('draggable', 'true');
     fieldset.setAttribute('ondragstart', 'drag(event);');
     
